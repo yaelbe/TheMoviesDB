@@ -18,4 +18,4 @@ When cliking a movie - it bring the movie details,it is also possible to watch t
 Cliking on trailler list button will show alist of this movie.By tap on trailler name it will play it.
 
 
-![Image description](link-to-image)
+![Image description]screens/Screen Shot 2020-04-11 at 21.50.07.png
