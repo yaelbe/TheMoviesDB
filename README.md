@@ -27,7 +27,7 @@ When clicking a movie from the list - it will bring the movie details,it is also
  Now you can chose a trailer to play.
 The applecation is using native player to play them.
 
-## Gender List
+## Genre List
 
 ![Image description](https://github.com/yaelbe/TheMoviesDB/blob/master/screens/Screen%20Shot%202020-04-11%20at%2021.50.07.png)
 ## Movies list 
