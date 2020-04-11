@@ -2,7 +2,7 @@
 
 This code using the follwing cocoa pods:
 
-- Noke - to load imges from url
+- Noke - for loading imges from url
 - XCDYouTubeKit -  to resolve youTube video link from id
 
 Before first run you mast run pod install.
