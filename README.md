@@ -7,7 +7,7 @@ This code using the follwing cocoa pods:
 
 Before first run. you must run pod install.
 
-The application supports dark mode.
+The application supports DARK MODE as well.
 
 This small application is using  www.themoviedb.org API:
 - get Genres -> https://api.themoviedb.org/3/genre/movie/list?api_key=XXX
