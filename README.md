@@ -7,7 +7,14 @@ This code using the follwing cocoa pods:
 
 Before first run you mast run pod install.
 
-This small applecation is using  www.themoviedb.org api
+This small applecation is using  www.themoviedb.org api:
+- get Genres -> https://api.themoviedb.org/3/genre/movie/list?api_key=XXX
+
+- get Movies -> https://api.themoviedb.org/3/movie/popular?api_key=XXX&language=en-US&page=Y 
+
+- get Movie Videos -> https://api.themoviedb.org/3/movie/<<movie_id>>/videos?api_key=XXX
+
+ 
 
 It bring a genre list first.
 
@@ -28,7 +35,7 @@ The highlighted movies are from the chosen gendre
 
 ![Image description](https://github.com/yaelbe/TheMoviesDB/blob/master/screens/Screen%20Shot%202020-04-11%20at%2021.50.49.png)
 
-# Trailler list
+# Trailer list
 
 ![Image description](https://github.com/yaelbe/TheMoviesDB/blob/master/screens/Screen%20Shot%202020-04-11%20at%2021.50.58.png)
 
