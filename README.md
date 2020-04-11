@@ -3,28 +3,28 @@
 This code using the follwing cocoa pods:
 
 - Noke - for loading imges from url
-- XCDYouTubeKit -  to resolve youTube video link from id
+- XCDYouTubeKit -  to resolve youTube video link from ID
 
-Before first run you mast run pod install.
+Before first run. you must run pod install.
 
-The applecation support dark mode.
+The application supports dark mode.
 
-This small applecation is using  www.themoviedb.org api:
+This small application is using  www.themoviedb.org API:
 - get Genres -> https://api.themoviedb.org/3/genre/movie/list?api_key=XXX
 
 - get Movies -> https://api.themoviedb.org/3/movie/popular?api_key=XXX&language=en-US&page=Y 
 
 - get Movie Videos -> https://api.themoviedb.org/3/movie/<<movie_id>>/videos?api_key=XXX
 
-#### Apllication flow:
+#### Application flow:
 
-First, it's bringing  a genre list .
+First, it brings a genre list.
 
-After selecting a genre, it will fetch the popular movie list and highlight the movies that are from the genre you chose ,the selected genre will be display on the top of the screen.
+After selecting a genre, it will fetch the popular movie list and highlight the movies (light Gray Clolor) that are from the chosen genre. The selected genre will be display on the top of the screen.
 
-When clicking a movie from the list - it will bring the movie details,it is also possible to watch the movie traillers, to get the trailers list,click on the "trailer list" button.
+When clicking a movie from the list - it will bring the movie detail. it is also possible to watch the movie traillers. to get the trailers list, click on the "trailer list" button.
 
- Now you can chose a trailer to play.
+Now you can choose a trailer to play.
 The applecation is using native player to play them.
 
 ## Genre List
