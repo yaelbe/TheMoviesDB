@@ -31,7 +31,7 @@ The applecation is using native player to play them.
 
 ![Image description](https://github.com/yaelbe/TheMoviesDB/blob/master/screens/Screen%20Shot%202020-04-11%20at%2021.50.07.png)
 ## Movies list 
-The highlighted movies are from the chosen gendre
+The highlighted movies are from the chosen genre
 
 ![Image description](https://github.com/yaelbe/TheMoviesDB/blob/master/screens/Screen%20Shot%202020-04-11%20at%2021.50.30.png)
 # Movie Detailes
