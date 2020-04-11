@@ -7,6 +7,8 @@ This code using the follwing cocoa pods:
 
 Before first run you mast run pod install.
 
+The applecation support dark mode.
+
 This small applecation is using  www.themoviedb.org api:
 - get Genres -> https://api.themoviedb.org/3/genre/movie/list?api_key=XXX
 
