@@ -14,15 +14,16 @@ This small applecation is using  www.themoviedb.org api:
 
 - get Movie Videos -> https://api.themoviedb.org/3/movie/<<movie_id>>/videos?api_key=XXX
 
- 
+#### Apllication flow:
 
-It bring a genre list first.
+First, it's bringing  a genre list .
 
-After selecting a gener it fetch the popular movie list and color the movies that fron the genre you chose.
+After selecting a genre, it will fetch the popular movie list and highlight the movies that are from the genre you chose ,the selected genre will be display on the top of the screen.
 
-When cliking a movie - it bring the movie details,it is also possible to watch the movie traillers.
+When clicking a movie from the list - it will bring the movie details,it is also possible to watch the movie traillers, to get the trailers list,click on the "trailer list" button.
 
-Cliking on trailler list button will show alist of this movie.By tap on trailler name it will play it.
+ Now you can chose a trailer to play.
+The applecation is using native player to play them.
 
 ## Gender List
 
