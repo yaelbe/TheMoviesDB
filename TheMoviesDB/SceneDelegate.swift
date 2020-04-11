@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  TheMoviesDB
+//  themoviedb
 //
-//  Created by Yael Bilu Eran on 09/04/2020.
+//  Created by Yael Bilu Eran on 11/04/2020.
 //  Copyright © 2020 CodeQueen. All rights reserved.
 //
 
