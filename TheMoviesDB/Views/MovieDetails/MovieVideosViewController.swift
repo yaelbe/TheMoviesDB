@@ -36,6 +36,10 @@ class MovieVideosViecController: UICollectionViewController{
         viewModel.loadNextPage()
     }
     
+    deinit {
+        cancelSubscription?()
+    }
+    
     private func playVideo(_ key: String){
         XCDYouTubeClient.default().getVideoWithIdentifier(key){[weak self] video,error in
             if error != nil { return }

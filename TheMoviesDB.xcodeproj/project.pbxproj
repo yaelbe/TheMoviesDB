@@ -707,7 +707,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P9NXMMW4SZ;
+				DEVELOPMENT_TEAM = 7ZAU5D7Q6A;
 				INFOPLIST_FILE = TheMoviesDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -726,7 +726,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P9NXMMW4SZ;
+				DEVELOPMENT_TEAM = 7ZAU5D7Q6A;
 				INFOPLIST_FILE = TheMoviesDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

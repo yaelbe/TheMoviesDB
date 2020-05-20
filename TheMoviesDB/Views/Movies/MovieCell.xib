@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -23,7 +23,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="A movie name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XpR-Im-cMm">
-                        <rect key="frame" x="137" y="5" width="151" height="20"/>
+                        <rect key="frame" x="137" y="5" width="167" height="20"/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -65,23 +65,18 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" image="disclosure-right-ic" translatesAutoresizingMaskIntoConstraints="NO" id="lPb-GF-yjr">
-                        <rect key="frame" x="296" y="8.5" width="8" height="13"/>
-                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="lPb-GF-yjr" secondAttribute="trailing" constant="16" id="2Bi-xf-bfl"/>
                     <constraint firstItem="oaD-kQ-U8Y" firstAttribute="top" secondItem="XpR-Im-cMm" secondAttribute="bottom" constant="8" id="9du-h6-AFf"/>
                     <constraint firstItem="til-Ce-J0c" firstAttribute="top" secondItem="byd-gg-wjD" secondAttribute="top" constant="5" id="Dbn-Sq-Hpy"/>
+                    <constraint firstAttribute="trailing" secondItem="XpR-Im-cMm" secondAttribute="trailing" constant="16" id="HAT-zd-leB"/>
                     <constraint firstItem="l1A-4A-CLD" firstAttribute="bottom" secondItem="til-Ce-J0c" secondAttribute="bottom" id="Lzx-LI-UOl"/>
                     <constraint firstItem="l1A-4A-CLD" firstAttribute="leading" secondItem="til-Ce-J0c" secondAttribute="trailing" constant="12" id="OES-Ld-ipg"/>
                     <constraint firstItem="til-Ce-J0c" firstAttribute="leading" secondItem="byd-gg-wjD" secondAttribute="leading" id="Pu6-7b-aq6"/>
                     <constraint firstItem="Rhm-CI-qGP" firstAttribute="trailing" secondItem="oaD-kQ-U8Y" secondAttribute="trailing" id="Uqw-Bm-JYE"/>
                     <constraint firstItem="Rhm-CI-qGP" firstAttribute="bottom" secondItem="til-Ce-J0c" secondAttribute="bottom" id="bsA-wO-sEG"/>
                     <constraint firstItem="XpR-Im-cMm" firstAttribute="top" secondItem="til-Ce-J0c" secondAttribute="top" id="gAy-4i-DY4"/>
-                    <constraint firstItem="lPb-GF-yjr" firstAttribute="leading" secondItem="XpR-Im-cMm" secondAttribute="trailing" constant="8" id="i5b-7E-kDH"/>
                     <constraint firstItem="l1A-4A-CLD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="oaD-kQ-U8Y" secondAttribute="bottom" constant="12" id="izo-s0-KHt"/>
-                    <constraint firstItem="lPb-GF-yjr" firstAttribute="centerY" secondItem="XpR-Im-cMm" secondAttribute="centerY" id="jjF-fF-r1K"/>
                     <constraint firstAttribute="trailing" secondItem="oaD-kQ-U8Y" secondAttribute="trailing" constant="16" id="pld-Lm-4dm"/>
                     <constraint firstAttribute="bottom" secondItem="til-Ce-J0c" secondAttribute="bottom" priority="999" constant="5" id="u5r-by-bxA"/>
                     <constraint firstItem="XpR-Im-cMm" firstAttribute="leading" secondItem="til-Ce-J0c" secondAttribute="trailing" constant="12" id="wuV-U0-lfD"/>
@@ -95,10 +90,7 @@
                 <outlet property="ratingLabel" destination="Rhm-CI-qGP" id="YeC-mw-Hyw"/>
                 <outlet property="releaseYearLabel" destination="l1A-4A-CLD" id="6Iq-Rt-jpi"/>
             </connections>
-            <point key="canvasLocation" x="145" y="-430.5"/>
+            <point key="canvasLocation" x="144" y="-430.88455772113946"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="disclosure-right-ic" width="8" height="13"/>
-    </resources>
 </document>

@@ -40,6 +40,9 @@ class MoviesViewController: UITableViewController{
         tableView.reloadData()
     }
     
+    deinit {
+           cancelSubscription?()
+    }
     
     /// Changes the representation regarding the view model state
     func handle(_ state: State) {
@@ -65,9 +68,7 @@ class MoviesViewController: UITableViewController{
         }
     }
     
-    deinit {
-        cancelSubscription?()
-    }
+   
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == MoviesViewController.detailsSegue {

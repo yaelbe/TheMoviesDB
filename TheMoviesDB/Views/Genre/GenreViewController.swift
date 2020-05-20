@@ -27,6 +27,9 @@ class GenreViewController: UICollectionViewController{
         let item = UIBarButtonItem(image: UIImage(named: "AppIcon"), style: .plain, target: nil, action: nil)
         navigationItem.leftBarButtonItem = item
         
+       navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 34, weight: .bold) ]
+        navigationItem.largeTitleDisplayMode = .automatic
+        
         
         cancelSubscription = viewModel.state.subscribe(on: .main) { [weak self] state in
             self?.handle(state)
@@ -35,6 +38,10 @@ class GenreViewController: UICollectionViewController{
             self?.performSegue(withIdentifier: GenreViewController.SegueToMovies, sender: genre)
         }
         viewModel.loadNextPage()
+    }
+    
+    deinit {
+        cancelSubscription?()
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

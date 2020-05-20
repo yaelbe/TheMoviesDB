@@ -23,9 +23,9 @@ class BaseViewModel<T> {
     // Input
     var onSelectItem: ((T) -> Void)?
     
-    let lock = DispatchQueue(label: "com.MoviesListModel.dispatchQueue")
+    let lock = DispatchQueue(label: "com.MoviesListModel.dispatchQueue", attributes: .concurrent)
 
-    private var cancelSubscription: CancelSubscription?
+    //private var cancelSubscription: CancelSubscription?
     private var data: [T] = []{
         didSet {
             state.value = .data
@@ -33,11 +33,11 @@ class BaseViewModel<T> {
     }
 
     init(){
-        self.state = Observable(State.data)
+        self.state = Observable(State.empty)
     }
     
     deinit {
-        cancelSubscription?()
+        //cancelSubscription?()
     }
     
     func data(at index: Int) -> T? {
@@ -58,12 +58,13 @@ class BaseViewModel<T> {
         load()
     }
     
-    func load(){}
+    func load(){
+        preconditionFailure("This method must be overridden")
+    }
     
     func add(data dataToAdd: [T]) {
         lock.async { [weak self] in
-            guard let self = self else { return }
-            self.data += dataToAdd
+            self?.data += dataToAdd
         }
     }
 }

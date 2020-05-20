@@ -46,7 +46,7 @@ extension APIClient {
            completion(nil, .invalidResponse)
            return nil
         }
-        
+            
         let task = session.dataTask(with: apiUrl) { data, response, error in
             guard let httpResponse = response as? HTTPURLResponse, 200..<300 ~= httpResponse.statusCode else{
                 completion(nil, .invalidResponse)

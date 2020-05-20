@@ -14,7 +14,7 @@ public typealias CancelSubscription = () -> (Void)
 /// Tiny wrapper for property to be observable
 public final class Observable<T> {
     
-    private let lock = DispatchQueue(label: "com.observable.lock-queue")
+    private let lock = DispatchQueue(label: "com.observable.lock-queue", attributes: .concurrent)
     private var observers = NSHashTable<Observer>()
     typealias Handler = (T) -> Void
     private var _value: T
@@ -49,7 +49,7 @@ public final class Observable<T> {
     ///
     /// - Parameter callback: runs every value changes
     /// - Returns: unsubscribe function
-    @discardableResult
+   
     public func subscribe(on callbackQueue: DispatchQueue? = nil, callback: @escaping (T) -> Void) -> CancelSubscription {
         let observer = Observer(callbackQueue: callbackQueue, handler: callback)
         
